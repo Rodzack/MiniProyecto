@@ -24,7 +24,11 @@
             </table>
         </form>
         
-        <!--create table marca (
+        
+        <!--Aca se coloca las tablas para los formularios
+        
+        
+        create table marca (
 idMarca int primary key auto_increment,
 nombreMarca varchar (20)
 );
