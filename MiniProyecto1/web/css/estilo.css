@@ -37,11 +37,12 @@ small{
     box-shadow: inset 0 2px 3px rgba( 0, 0, 0, 0.1 );
     clear: both;
     font-family: sans-serif;
+    opacity: 0.6;
 
 }
 .text:focus {
     background: #fff;
-    box-shadow: 0 0 0 3px #fff38e, inset 0 2px 3px rgba( 0, 0, 0, 0.2 ), 0px 5px 5px rgba( 0, 0, 0, 0.15 );
+    box-shadow: 0 0 0 3px #fefefe, inset 0 2px 3px rgba( 0, 0, 0, 0.2 ), 0px 5px 5px rgba( 0, 0, 0, 0.15 );
     outline: none;
 }
 
