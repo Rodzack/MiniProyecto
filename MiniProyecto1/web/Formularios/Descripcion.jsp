@@ -23,5 +23,44 @@
                 <tr><td><input type="submit" value="Enviar"></td></tr>  
             </table>
         </form>
+        
+        
+        <!--Aca se coloca las tablas para los formularios
+        
+        
+        create table marca (
+idMarca int primary key auto_increment,
+nombreMarca varchar (20)
+);
+
+create table descripcion(
+idDescripcion int primary key auto_increment,
+capacidad varchar (15),
+velocidad varchar (10),
+tipoDeConexion varchar (20),
+tecnologia varchar (25),
+voltaje varchar (25),
+tamanio varchar (20),
+descripcionAdicional varchar (100)
+);
+create table tipoProducto(
+idTipoProducto int primary key auto_increment,
+tipoProducto varchar (30)
+);
+
+create table producto (
+idProducto int primary key auto_increment,
+nombre varchar (20),
+idTipoProducto int,
+foreign key (idTipoProducto) references tipoProducto (idTipoProducto)
+);
+
+create table descripcionProducto(
+idProducto int, foreign key (idProducto) references producto (idProducto),
+idMarca int, foreign key (idMarca) references marca (idMarca),
+idDescripcion int, foreign key (idDescripcion) references descripcion (idDescripcion),
+precio double
+);
+        -->
     </body>
 </html>
