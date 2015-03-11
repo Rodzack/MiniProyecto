@@ -5,7 +5,7 @@
  */
 package Clases;
 
-import Conexion.Conexion;
+import clases.Conexion;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
