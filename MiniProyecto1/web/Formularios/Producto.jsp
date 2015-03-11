@@ -14,7 +14,7 @@
     <body>
         <form action=".jsp" method="post" name="Producto">
             <table>
-                <tr><td>Nombre producto</td><td><input type="text" name="Nombre_producto "></td></tr>  
+                <tr><td>Nombre producto</td><td><input type="text" name="nombreProducto"></td></tr>  
                 <tr><td>idTipoProducto</td><td><input type="text" name="idTipoProducto "></td></tr>  
                 <tr><td><input type="submit" value="Enviar"></td></tr>  
             </table>

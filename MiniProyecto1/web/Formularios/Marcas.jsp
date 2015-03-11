@@ -14,8 +14,7 @@
     <body>
         <form action=".jsp" method="post" name="Marcas">
             <table>
-                <tr><td>Nombre producto</td><td><input type="text" name="Nombre_producto "></td></tr>  
-                <tr><td>idTipoProducto</td><td><input type="text" name="idTipoProducto "></td></tr>  
+                <tr><td>Nombre marca</td><td><input type="text" name="nombreMarca"></td></tr>  
                 <tr><td><input type="submit" value="Enviar"></td></tr>  
             </table>
         </form>
