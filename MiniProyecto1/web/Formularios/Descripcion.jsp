@@ -17,7 +17,7 @@
         entonces no entiendo bien qué pasa
         -->
         
-          <form action="../Servlets/insertar" method="post" >
+          <form action="../insertar" method="post" >
               
             <table>
                 
