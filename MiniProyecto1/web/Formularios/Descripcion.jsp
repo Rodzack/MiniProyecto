@@ -19,7 +19,8 @@
                 <tr><td>tipoDeConexion</td><td><input type="text" name="tipoDeConexion "></td></tr>  
                 <tr><td>Voltaje</td><td><input type="text" name="Voltaje"></td></tr> 
                 <tr><td>Tamaño</td><td><input type="text" name="Tamanio"></td></tr> 
-                <tr><td>descripcionAdicional</td><td><input type="text" name="descripcionAdicional"></td></tr> 
+                <tr><td>descripcionAdicional</td><td><input type="text" name="descripcionAdicional"></td></tr>
+                <tr><td>compatibilidad</td><td><input type="text" name="compatibilidad"></td></tr>    
                 <tr><td><input type="submit" value="Enviar"></td></tr>  
             </table>
         </form>
