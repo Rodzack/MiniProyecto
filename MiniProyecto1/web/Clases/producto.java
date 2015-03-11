@@ -5,13 +5,48 @@
  */
 package Clases;
 
+import Conexion.Conexion;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+
 /**
  *
  * @author Darlin
  */
 public class producto {
     
-    public producto(){}
+    Connection conn;
+    Statement estado;
+    ResultSet result;
+    String query;
+    
+    public producto(){
+        
+        conectar();
+        
+    }
+    
+    public String conectar(){
+        
+        String mensaje;
+        
+        Conexion conecta = new Conexion();
+        
+        conn = conecta.conectar_db();
+        
+        try {
+            estado = conn.createStatement();
+            mensaje = "todo bien, todo bonito";
+        } catch (Exception e) {
+            mensaje = "todo mal :'<";
+        }
+        return mensaje;
+    }
+    
+    
+    
     
     
     
