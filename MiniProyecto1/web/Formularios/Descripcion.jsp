@@ -12,6 +12,11 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <!--
+            Sería bueno crear un diccionario de los campos porque por ejemplo no sé para qué es "tipoDeConexion" y "compatibilidad" que por lo que veo es una foránea de marca
+        entonces no entiendo bien qué pasa
+        -->
+        
           <form action="insertarDescripcion.java" method="post" >
             <table>
                 <tr><td>Capacidad</td><td><input type="text" name="capacidad "></td></tr>  

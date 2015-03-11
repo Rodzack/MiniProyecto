@@ -16,7 +16,12 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hola putas</h1>
+        <h1></h1>
+        
+        <!-- NO ENTIENDO POR QUÉ ESTE ARCHIVO (insertarDescripcion) es JSP y el otro insertar (insertarDescripcion) es JAVA
+            SE SUPONE QUE PARA HACER ESO ES CON LOS BEANS O SEA LOS .JAVA y por eso es que este no debería funcionar bien
+        -->
+        
        <%
     Connection conn;
     Statement estado=null;
@@ -24,6 +29,7 @@
     String query;
 
     Conexion conectar = new Conexion();
+    
         conn = conectar.conectar_db();
         
         try {
@@ -34,14 +40,18 @@
 
 
 //Insertar 
-
+        
       query="insert into descripcion (capacidad,velocidad,tipoConexion,tecnologia,voltaje,tamanio,descripcionAdicional,compatibilidad) "
       + "values ('"+request.getParameter("capacidad") +"','"+request.getParameter("velocidad")+"','"+request.getParameter("tipoConexion")+"',"
               + "'"+request.getParameter("tecnologia")+"','"+request.getParameter("voltaje")+"','"+request.getParameter("tamanio")+"',"
               + "'"+request.getParameter("descripcionAdicional")+"','"+request.getParameter("compatibilidad")+"')";
    
-
-        estado.executeLargeUpdate(query);
+      try {
+                estado.executeUpdate(query);
+            } catch (Exception e) {
+                out.println("Hubo un  error");
+            }
+        
 
        %>
            <h1>hola putas</h1>
