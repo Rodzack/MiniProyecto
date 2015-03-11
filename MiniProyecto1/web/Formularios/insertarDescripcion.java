@@ -5,8 +5,12 @@
  */
 package Formularios;
 
+import Conexion.Conexion;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -37,10 +41,39 @@ public class insertarDescripcion extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet insertarDescripcion</title>");            
+            out.println("<title>Servlet insertarDescripcion</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet insertarDescripcion at " + request.getContextPath() + "</h1>");
+
+            Connection conn;
+            Statement estado = null;
+            ResultSet result;
+            String query;
+
+            Conexion conectar = new Conexion();
+            conn = conectar.conectar_db();
+
+            try {
+                estado = conn.createStatement();
+            } catch (Exception e) {
+
+            }
+
+//Insertar 
+            query = "insert into descripcion (capacidad,velocidad,tipoConexion,tecnologia,voltaje,tamanio,descripcionAdicional,compatibilidad) "
+                    + "values ('" + request.getParameter("capacidad") + "','" + request.getParameter("velocidad") + "','" + request.getParameter("tipoConexion") + "',"
+                    + "'" + request.getParameter("tecnologia") + "','" + request.getParameter("voltaje") + "','" + request.getParameter("tamanio") + "',"
+                    + "'" + request.getParameter("descripcionAdicional") + "','" + request.getParameter("compatibilidad") + "')";
+
+            try {
+                estado.executeUpdate(query);
+            } catch (Exception e) {
+                out.println("Hubo un  error");
+            }
+
+            out.println("Se ha insertado");
+
             out.println("</body>");
             out.println("</html>");
         }
