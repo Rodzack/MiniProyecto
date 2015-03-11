@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Descripcion</title>
     </head>
     <body>
         <!--
@@ -17,18 +17,48 @@
         entonces no entiendo bien qué pasa
         -->
         
-          <form action="insertarDescripcion.java" method="post" >
+          <form action="../insertar" method="post" >
+              
             <table>
-                <tr><td>Capacidad</td><td><input type="text" name="capacidad "></td></tr>  
-                <tr><td>Velocidad </td><td><input type="text" name="velocidad"></td></tr>  
-                <tr><td>tipoDeConexion</td><td><input type="text" name="tipoConexion "></td></tr>  
-                 <tr><td>tecnologia</td><td><input type="text" name="tecnologia"></td></tr>    
-                <tr><td>Voltaje</td><td><input type="text" name="voltaje"></td></tr> 
-                <tr><td>Tamaño</td><td><input type="text" name="tamanio"></td></tr> 
-                <tr><td>descripcionAdicional</td><td><input type="text" name="descripcionAdicional"></td></tr>
-                <tr><td>compatibilidad</td><td><input type="text" name="compatibilidad"></td></tr>    
-                <tr><td><input type="submit" value="Enviar"></td></tr>  
+                
+                <tr>
+                    <td>Capacidad</td>
+                    <td><input type="text" name="capacidad "></td>
+                </tr>  
+                <tr>
+                    <td>Velocidad </td>
+                    <td><input type="text" name="velocidad"></td>
+                </tr>  
+                <tr>
+                    <td>tipoDeConexion</td>
+                    <td><input type="text" name="tipoConexion "></td>
+                </tr>  
+                 <tr>
+                     <td>tecnologia</td>
+                     <td><input type="text" name="tecnologia"></td>
+                 </tr>    
+                <tr>
+                    <td>Voltaje</td>
+                    <td><input type="text" name="voltaje"></td>
+                </tr> 
+                <tr>
+                    <td>Tamaño</td>
+                    <td><input type="text" name="tamanio"></td>
+                </tr> 
+                <tr>
+                    <td>descripcionAdicional</td>
+                    <td><input type="text" name="descripcionAdicional"></td>
+                </tr>
+                <tr>
+                    <td>compatibilidad</td>
+                    <td><input type="text" name="compatibilidad"></td>
+                </tr>    
+                <tr>
+                    <td><input type="submit" value="Enviar"></td>
+                </tr>  
+                
             </table>
+              
         </form>
         
         
