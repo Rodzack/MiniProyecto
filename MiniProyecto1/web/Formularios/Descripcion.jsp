@@ -12,13 +12,14 @@
         <title>JSP Page</title>
     </head>
     <body>
-          <form action=".jsp" method="post" name="Descripcion">
+          <form action="insertarDescripcion.java" method="post" >
             <table>
-                <tr><td>Capacidad</td><td><input type="text" name="Capacidad "></td></tr>  
-                <tr><td>Velocidad </td><td><input type="text" name="Velocidad"></td></tr>  
-                <tr><td>tipoDeConexion</td><td><input type="text" name="tipoDeConexion "></td></tr>  
-                <tr><td>Voltaje</td><td><input type="text" name="Voltaje"></td></tr> 
-                <tr><td>Tamaño</td><td><input type="text" name="Tamanio"></td></tr> 
+                <tr><td>Capacidad</td><td><input type="text" name="capacidad "></td></tr>  
+                <tr><td>Velocidad </td><td><input type="text" name="velocidad"></td></tr>  
+                <tr><td>tipoDeConexion</td><td><input type="text" name="tipoConexion "></td></tr>  
+                 <tr><td>tecnologia</td><td><input type="text" name="tecnologia"></td></tr>    
+                <tr><td>Voltaje</td><td><input type="text" name="voltaje"></td></tr> 
+                <tr><td>Tamaño</td><td><input type="text" name="tamanio"></td></tr> 
                 <tr><td>descripcionAdicional</td><td><input type="text" name="descripcionAdicional"></td></tr>
                 <tr><td>compatibilidad</td><td><input type="text" name="compatibilidad"></td></tr>    
                 <tr><td><input type="submit" value="Enviar"></td></tr>  
