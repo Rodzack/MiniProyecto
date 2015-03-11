@@ -15,13 +15,20 @@ import java.sql.Statement;
  * @author Aprendiz
  */
 public class Conexion {
-   /* try
+public void Funcionn()
+   {
+      try
       {
          Class.forName("com.mysql.jdbc.Driver");
          Connection conex = DriverManager.getConnection(
-            "jdbc:mysql://localhost:83/PruebaBD", "root", "");
+        "jdbc:mysql://localhost:83/PruebaBD", "root", "");
          Statement st = conex.createStatement();
-      catch(excepction e){
-    
-        }*/
+
+      }
+      catch (Exception e)
+      {
+         e.printStackTrace();
+      }
+        
+}
 }
