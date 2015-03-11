@@ -17,7 +17,7 @@
         entonces no entiendo bien qué pasa
         -->
         
-          <form action="insertarDescripcion.java" method="post" >
+          <form action="insertar" method="post" >
             <table>
                 <tr><td>Capacidad</td><td><input type="text" name="capacidad "></td></tr>  
                 <tr><td>Velocidad </td><td><input type="text" name="velocidad"></td></tr>  
