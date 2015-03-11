@@ -12,7 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-          <form action=".jsp" method="post">
+          <form action=".jsp" method="post" name="Descripcion">
             <table>
                 <tr><td>Capacidad</td><td><input type="text" name="Capacidad "></td></tr>  
                 <tr><td>Velocidad </td><td><input type="text" name="Velocidad"></td></tr>  
