@@ -49,7 +49,7 @@
                 estado.executeUpdate(producto);
                 out.println("insertado producto");
 
-                descripcionproducto = "insert into descripcionproducto (idProducto,idMarca,idDescripcion,precio,rango) values ('" + Integer.parseInt(request.getParameter("idProducto")) + "','" + Integer.parseInt(request.getParameter("idMarca")) + "','" + Integer.parseInt(request.getParameter("idDescripcion")) + "','" + Double.parseDouble(request.getParameter("precio")) + "','" + request.getParameter("rengo") + "')";
+                descripcionproducto = "insert into descripcionproducto (idProducto,idMarca,idDescripcion,precio) values ('" + Integer.parseInt(request.getParameter("idProducto")) + "','" + Integer.parseInt(request.getParameter("idMarca")) + "','" + Integer.parseInt(request.getParameter("idDescripcion")) + "','" + Integer.parseInt(request.getParameter("precio")) + "')";
                 estado.executeUpdate(descripcionproducto);
                 out.println("insertado descripcion producto");
             } catch (Exception e) {
