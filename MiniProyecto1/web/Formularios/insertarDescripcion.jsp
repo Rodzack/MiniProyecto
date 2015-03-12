@@ -4,7 +4,7 @@
     Author     : aprendiz
 --%>
 
-<%@page import="Conexion.Conexion"%>
+<%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
@@ -23,26 +23,24 @@
         -->
         
        <%
-    Connection conn;
+    Connection conex;
     Statement estado=null;
     ResultSet result;
     String query;
 
-    Conexion conectar = new Conexion();
-    
-        conn = conectar.conectar_db();
         
         try {
-            estado = conn.createStatement();
-        } catch (Exception e) {
-          
+        Class.forName("com.mysql.jdbc.Driver");
+        conex= (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/miniproyecto","root","");
+            estado= conex.createStatement();
+                out.println("Conexion establecida");
+        }catch(Exception e){
+            out.println("Error en la conexion"+ e);
         }
-
+            
 
 //Insertar 
-        
-      
-   
+
       try {
           query="insert into descripcion (capacidad,velocidad,tipoConexion,tecnologia,voltaje,tamanio,descripcionAdicional,) "
       + "values ('"+request.getParameter("capacidad") +"','"+request.getParameter("velocidad")+"','"+request.getParameter("tipoConexion")+"',"
@@ -56,6 +54,6 @@
         
 
        %>
-           <h1>hola putas</h1>
+           <h1>hola </h1>
     </body>
 </html>
