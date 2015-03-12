@@ -23,7 +23,7 @@
                 
                 <tr>
                     <td>Capacidad</td>
-                    <td><input type="text" name="capacidad "></td>
+                    <td><input type="text" name="capacidad"></td>
                 </tr>  
                 <tr>
                     <td>Velocidad </td>
@@ -31,7 +31,7 @@
                 </tr>  
                 <tr>
                     <td>tipoDeConexion</td>
-                    <td><input type="text" name="tipoConexion "></td>
+                    <td><input type="text" name="tipoConexion"></td>
                 </tr>  
                  <tr>
                      <td>tecnologia</td>
