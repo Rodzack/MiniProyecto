@@ -16,10 +16,11 @@
             Sería bueno crear un diccionario de los campos porque por ejemplo no sé para qué es "tipoDeConexion" y "compatibilidad" que por lo que veo es una foránea de marca
         entonces no entiendo bien qué pasa
         -->
-        
-          <form action=insertarDescripcion.jsp method="post" >
-              
+
+        <form action=insertarDescripcion.jsp method="post" >
+
             <table>
+                <th>Descripcion</th>
                 
                 <tr>
                     <td>Capacidad</td>
@@ -33,10 +34,10 @@
                     <td>tipoDeConexion</td>
                     <td><input type="text" name="tipoConexion"></td>
                 </tr>  
-                 <tr>
-                     <td>tecnologia</td>
-                     <td><input type="text" name="tecnologia"></td>
-                 </tr>    
+                <tr>
+                    <td>tecnologia</td>
+                    <td><input type="text" name="tecnologia"></td>
+                </tr>    
                 <tr>
                     <td>Voltaje</td>
                     <td><input type="text" name="voltaje"></td>
@@ -53,18 +54,60 @@
                     <td>compatibilidad</td>
                     <td><input type="text" name="compatibilidad"></td>
                 </tr>    
-                <tr>
-                    <td><input type="submit" value="Enviar"></td>
-                </tr>  
-                
+                 
+
             </table>
-              
+            
+            <table>
+                <th>Producto</th>
+
+                <tr>
+                    <td>Nombre</td>
+                    <td><input type="text" name="nombre"></td>
+                </tr>  
+                <tr>
+                    <td>idTipoProducto </td>
+                    <td><input type="text" name="idTipoProducto"></td>
+                </tr>  
+               
+               
+            </table>
+            
+              <table>
+                <th>DescripcionProducto</th>
+
+                <tr>
+                    <td>idProducto</td>
+                    <td><input type="text" name="idProducto"></td>
+                </tr>  
+                <tr>
+                    <td>idMarca </td>
+                    <td><input type="text" name="idMarca"></td>
+                </tr>  
+                <tr>
+                    <td>idDescripcion</td>
+                    <td><input type="text" name="idDescripcion"></td>
+                </tr>  
+                 <tr>
+                    <td>Precio</td>
+                    <td><input type="text" name="precio"></td>
+                </tr>  
+                <tr>
+                    <td>Rango</td>
+                    <td><input type="text" name="rango"></td>
+                </tr> 
+                
+                 <tr>
+                    <td><input type="submit" value="Enviar"></td>
+                </tr>
+            </table>
+            
+
         </form>
-        
-        
+
+
         <!--Aca se coloca las tablas para los formularios
-        
-        
+
         create table marca (
 idMarca int primary key auto_increment,
 nombreMarca varchar (20)
