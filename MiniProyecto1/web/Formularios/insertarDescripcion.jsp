@@ -41,15 +41,17 @@
 
 //Insertar 
         
-      query="insert into descripcion (capacidad,velocidad,tipoConexion,tecnologia,voltaje,tamanio,descripcionAdicional,compatibilidad) "
-      + "values ('"+request.getParameter("capacidad") +"','"+request.getParameter("velocidad")+"','"+request.getParameter("tipoConexion")+"',"
-              + "'"+request.getParameter("tecnologia")+"','"+request.getParameter("voltaje")+"','"+request.getParameter("tamanio")+"',"
-              + "'"+request.getParameter("descripcionAdicional")+"','"+request.getParameter("compatibilidad")+"')";
+      
    
       try {
+          query="insert into descripcion (capacidad,velocidad,tipoConexion,tecnologia,voltaje,tamanio,descripcionAdicional,) "
+      + "values ('"+request.getParameter("capacidad") +"','"+request.getParameter("velocidad")+"','"+request.getParameter("tipoConexion")+"',"
+              + "'"+request.getParameter("tecnologia")+"','"+request.getParameter("voltaje")+"','"+request.getParameter("tamanio")+"',"
+              + "'"+request.getParameter("descripcionAdicional")+"')";
                 estado.executeUpdate(query);
+                out.println("insertado");
             } catch (Exception e) {
-                out.println("Hubo un  error");
+                out.println("Hubo un  error al insertar");
             }
         
 

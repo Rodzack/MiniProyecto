@@ -21,9 +21,9 @@ public class Conexion {
     
     public Connection conectar_db(){
         
-        String server = "jdbc:mysql://localhost/miniproyecto";
+        String server = "jdbc:mysql://localhost:8081/miniproyecto";
         String user = "root";
-        String pass = "";
+        String pass = "123";
         
         try {
             Class.forName("com.mysql.jdbc.Driver");

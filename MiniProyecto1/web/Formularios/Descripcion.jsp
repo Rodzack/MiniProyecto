@@ -17,7 +17,7 @@
         entonces no entiendo bien qué pasa
         -->
         
-          <form action="../insertar.java" method="post" >
+          <form action="Formularios/insertarDescripcion.jsp" method="post" >
               
             <table>
                 
