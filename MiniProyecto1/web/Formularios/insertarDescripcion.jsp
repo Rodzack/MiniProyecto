@@ -39,19 +39,19 @@
                 out.println("Error en la conexion" + e);
             }
 
- //Insertar 
+            //Insertar 
             try {
-                descripcion = "insert into descripcion (capacidad,velocidad,tipoDeConexion,tecnologia,voltaje,tamanio,descripcionAdicional,compatibilidad) values ('" + request.getParameter("capacidad") + "','" + request.getParameter("velocidad") + "','" + request.getParameter("tipoConexion") + "','" + request.getParameter("tecnologia") + "','" + request.getParameter("voltaje") + "','" + request.getParameter("tamanio") + "','" + request.getParameter("descripcionAdicional") + "','"+Integer.parseInt(request.getParameter("compatibilidad"))+"')";
+                descripcion = "insert into descripcion (capacidad,velocidad,tipoDeConexion,tecnologia,voltaje,tamanio,descripcionAdicional,compatibilidad) values ('" + request.getParameter("capacidad") + "','" + request.getParameter("velocidad") + "','" + request.getParameter("tipoConexion") + "','" + request.getParameter("tecnologia") + "','" + request.getParameter("voltaje") + "','" + request.getParameter("tamanio") + "','" + request.getParameter("descripcionAdicional") + "','" + Integer.parseInt(request.getParameter("compatibilidad")) + "')";
                 estado.executeUpdate(descripcion);
                 out.println("insertado descripcion");
-                
-                producto ="insert into producto (nombre,idTipoProducto) values ('"+request.getParameter("nombre")+"','"+Integer.parseInt(request.getParameter("idTipoProducto"))+"')";
+
+                producto = "insert into producto (nombre,idTipoProducto) values ('" + request.getParameter("nombre") + "','" + Integer.parseInt(request.getParameter("idTipoProducto")) + "')";
                 estado.executeUpdate(producto);
-                out.println("insertado producto"); 
-                    
-                descripcionproducto ="insert into descripcionproducto (idProducto,idMarca,idDescripcion,precio,rango) values ('"+Integer.parseInt(request.getParameter("idProducto"))+"','"+Integer.parseInt(request.getParameter("idMarca"))+"','"+Integer.parseInt(request.getParameter("idDescripcion"))+"','"+Double.parseDouble(request.getParameter("precio"))+"','"+request.getParameter("rengo")+"')";  
-                    estado.executeUpdate(descripcionproducto);
-                     out.println("insertado descripcion producto");    
+                out.println("insertado producto");
+
+                descripcionproducto = "insert into descripcionproducto (idProducto,idMarca,idDescripcion,precio,rango) values ('" + Integer.parseInt(request.getParameter("idProducto")) + "','" + Integer.parseInt(request.getParameter("idMarca")) + "','" + Integer.parseInt(request.getParameter("idDescripcion")) + "','" + Double.parseDouble(request.getParameter("precio")) + "','" + request.getParameter("rengo") + "')";
+                estado.executeUpdate(descripcionproducto);
+                out.println("insertado descripcion producto");
             } catch (Exception e) {
                 out.println("Hubo un  error al insertar");
             }
