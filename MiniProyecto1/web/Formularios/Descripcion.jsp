@@ -17,6 +17,13 @@
         entonces no entiendo bien qué pasa
         -->
 
+        <div class="imagen_ayuda">
+            
+        <img src="css/categorias.jpg" alt="" />    
+        <img src="css/marcas2.png" alt="" />
+        <img src="marcas1.png" alt="" />
+        </div>
+        
         <form action=insertarDescripcion.jsp method="post" >
 
             <table>
@@ -104,6 +111,10 @@
             
 
         </form>
+        
+        
+        
+        
 
 
         <!--Aca se coloca las tablas para los formularios
