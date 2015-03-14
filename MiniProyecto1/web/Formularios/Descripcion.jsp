@@ -16,13 +16,6 @@
             Sería bueno crear un diccionario de los campos porque por ejemplo no sé para qué es "tipoDeConexion" y "compatibilidad" que por lo que veo es una foránea de marca
         entonces no entiendo bien qué pasa
         -->
-
-        <div class="imagen_ayuda">
-            
-        <img src="css/categorias.jpg" alt="" />    
-        <img src="css/marcas2.png" alt="" />
-        <img src="marcas1.png" alt="" />
-        </div>
         
         <form action=insertarDescripcion.jsp method="post" >
 
