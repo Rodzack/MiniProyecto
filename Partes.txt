@@ -1,0 +1,130 @@
+Descripcion
+Capacidad
+Velocidad 
+tipoDeConexion
+tecnologia
+Voltaje
+Tamaño
+descripcionAdicional
+compatibilidad
+
+
+Producto
+Nombre
+idTipoProducto 
+DescripcionProducto
+idProducto
+idMarca 
+idDescripcion
+Precio
+Rango
+
+
+Ram:
+Memoria Ddr3 4gb 1333mhz Transcend 84.000
+Memoria DDr3 Kingston De 8 Gigas 204.990
+MEMORIA RAM DDR3 8GB PORTATIL 1600 PC3L-12800S (DDR3-1600) 179.900	
+Kit Memoria Mac Ddr3 8gb (2x4gb) 1066mhz Pc3 8500 Crucial  212.000
+Memoria Corsair Dominator Platinum Ddr4 2666 32gb (4 X 8gb)Speed: 2666MHz Voltage: 1.2V  3.360.000
+Memoria Corsair Vengeance Pro 16gb 2x8gb Ddr3 2400mhz Density: 16GB (2x8GB) Speed: 2400MHz Voltage: 1.65V 650.000
+Memoria Ddr3 So Dimm Portatil Gskill Ripjaws 8gb 1600mh 220.000
+Kingston Hyperx Fury 8gb 1600mhz 4gbx2 225.000
+Memoria Ram G.skill Ripjawsx Roja 8gb 2x4gb Ddr3 1600 Mhz
+
+Tarjeta De Red Tp-link Tf-3200 Pci 10/100mbps 14.900
+Expreso Gigabit Pci Tp-link Tg-3468 24.500 
+Digium 2e1/t1 60 Canales Pci De Dos Puertos.te205p 3.200.000
+Red Externa Impresoras Y Plotters Hp 620n 220.000
+Linksys Wmp600n Wireless-n Dual- Ban 194.000
+
+Discos duros
+Disco Duro 500gb Sata RPM 5400 125.900
+Disco Duro Sata 1 Tera Dvr O Pc Seagate-hitachi-western Dig RPM 7200 137.900
+Disco Duro De 1 Terabyte Sata 7200 Rpm Para Pc. 129.990 
+Disco Duro Sata 2.000gigas 2tb RPm 7200 SataIII GB/s 209.990
+Disco Duro 1000gb 1tb Sata Rpm 7200 153.900 
+Disco Duro De 1tb 64mb De Cahe, Sata Iii Y 7200rpm  seagate Barracuda
+
+
+Tarjetas graficas
+NVIDIA 8400 GS 8 Processing Cores 520 MHz GPU 1238 MHz Shader Clock 1238GT/s Texture Fill Rate Memory-1024 MB, 64 bit DDR3 1200 MHz (effective) 9.6 GB/s Memory Bandwidth Interface PCI-E 2.0 16x DVI-I, HDMI, VGA  94.990
+Tarjeta De Video Xfx R7 260x Core Edition Ddr5 - 1075mhz xfx 264.000
+Tarjeta De Video Evga Nvidia Geforce Gt 520 2gb Ddr3 1620 MHz 48 núcleos CUDA 134.990 
+Evga Gt610 2gb 1620 MHz Reloj Boost 6.5GT / s Tasa de relleno de texturas 2048 MB 154.900
+Ati Radeon Sapphire R7 260x 2gb Ddr5 Crossfire 1000 MHz Reloj de núcleo 384.900
+Tarjeta De Video Evga Geforce Gt 620 2gb Ddr3 220.000
+Tarjeta Video Nvidia Geforce Evga Gt 720 Ddr3 2gb Pci Expres 199.900
+Tarjeta De Video Gforce 520 De 2 Gigas Evga 134.900
+
+Proceadores
+
+Intel Core I5 4440 3.3ghz Socket Lga 1150 4ta Gen 504.900
+Procesador Amd Fx 6300 Vishera 3.5 Ghz 6 Núcleos 95w Am3+ 304.900
+--Procesador Intel Pentium G3220 3.0ghz Socket Lga1150 4ta Gen 179.900
+Procesador Amd Fx 6350 3.9/4.2 Ghz X6 Am3+ 6 Nucleos 125w 364.900
+
+--Procesador Amd Fx-4300 Black Edition Vishera 3.8 Ghz 95w 269.900
+
+Procesador Intel Celeron G1840 2.8ghz Socket Lga1150 4ta Gen 159.900
+--Procesador Intel Core I5 4690k Devils Cayon 664.900
+Procesador Intel Pentium G3258 2 Nucleos 3.2 GH 230.000
+Procesador Intel Core I5 4690k 3.5ghz Socket Lga1150 4ta Gen 664.900
+
+Board
+Board Asrock G41m Vs3 Ddr3 775 Procesadores Intel Lga 189.000
+Board Asrock Para Amd - Sirve Con Ddr2 Y Ddr3 2 Puertos Pci 139.990
+Board Asus H81m-c 4ta Gen Uefi Bios Mode Procesadores Intel 174.900
+Board Gigabyte Z97x-ud7 Th Lga 1150 Soporte Multi-gpu 654.900
+Board Gigabyte Ga-970a-ds3p Am3+ Atx Crossfire Usb 3.0 Sata3 254.900
+Board Asrock H81m-vg4 Skt 1150 Intel/ +opcional Proc. 4a Gen 124.900
+Board Asrock H81m Vg4 Socket 1150 Intel 4ta Generacion 123.900
+
+Fuentes de poder
+Fuente De Poder Atx-750 Watts 20-24 Pines 24.900
+Fuente De Poder Micro Atx Chasis Pequeño Unitec ventilador 12cm 27.990
+Fuente De Poder Corsair Rm850w Modular 80 Plus Gold 539.900
+Fuente De Poder Semi Modular Cooler Master V750 80 Plus Gold 369.900
+Fuente De Poder Ref Psu002 Jyr 2 En 1 Doble Sata E Ide  25.000
+Fuente De Poder Semi Modular Cooler Master V650 80 Plus Gold 334.900
+Fuente De Poder Corsair Cx 500w M 80 Plus Bronce Modular 234.900
+Fuente De Poder Atx-750 Watts 20-24 Pines Para Computador 25.990
+Fuente De Poder Atx 350 Watts Reales Unitec 70.000
+Fuente De Poder Atx-750 Watts 20-24 Pines
+
+Monitores
+Monitor Asus 27'' Mx279h Led Full Hd Sin Marco Ah-ips 1.249.900
+Monitor Asus Vx248h 24'' Fullhd 1ms 779.900 
+Monitor Lg 25um65 Ips Ultra Wide 25 Dvi-d Hdmi  699.000
+Monitor Lg 25 Pulg. Ultra Wide Led, Hdmi, Dvi- D, I P S 689.990
+Monitor Lg 23mp65h 23 Ips Led Wide Screen Hdmi 545.000
+Monitor Led Tv Huskee 19 Hdmi, Usb, Rca 289.900
+Monitor Samsung Sd300 Series Led  259.000
+Monitor Samsung Led 18.5pulgadas 20 W  peso 3.4 kg 214.000
+
+Mouse
+Mouse Anker Vertical Ergonomic 2.4g Wireless usb 10 metros de alcance inalambrico 119.999
+Mouse Vertical Wowpen 39.900
+Mouse Vertical Alambrico 49.900
+Mouse Inalambrico Genius Optico Ns-6000 Usb 19.500 1000 dpi 2.4GHz 1000 dpi USB 19.500
+Mouse Genius Xscroll Usb Para Pc cable 1.8m 6 botones transferencia usb 1000hz  45.000
+Mouse Vertical Ergonómico Geixo - M618 - Usb 84.900
+Mouse Gamer A4tech Laser 750bk 45.000
+Mouse Genius Gx Gaming Gila 12 Botones 200 - 8200dpi  luz de fondo RGB cable 1.8m Usb 177.500 
+
+Teclados
+Teclado Inalambrico Logitech 10 metros de alcance,Plug and Play,Touchpad Integrado de 9 cm  99.900
+Teclado Genius Manticore Kb-g255 teclado con retroiluminación LED azul 71.000
+Teclado Razer Deathstalker Ultimate Pantalla Tactil 4.05 usb 649.900
+Teclado Flexible Usb Unitec usb 17.990
+Teclado Blackwidow Razer Standar 2014 Synapse 2.0 - 289.900
+Teclado Microsoft Wedge Mobile Bluetooth Spañol U6r00004 89.900
+Teclado Genius Kb-g235 usb 30.900
+Teclado Logitech G105 Gaming · Retroiluminado · Programable,usb, desactivacion de teclas 87.900
+
+
+Coolers
+Disipador Cooler Master Tpc 812 Con Camara De Vapor Vertical 199.900
+Disipador De Refrigeracion Liquida Cooler Master Seidon120m 209.900
+Disipador De Refrigeracion Liquida Cooler Master Glacer 240l 399.900
+Disipador Cooler Master Seidon120v Sistema Montaje Universal
+            
