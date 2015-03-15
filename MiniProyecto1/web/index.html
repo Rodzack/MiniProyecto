@@ -6,6 +6,8 @@ and open the template in the editor.
 -->
 <html>
     <head>
+        <link rel="shortcut icon" href="css/favicon.ico" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <title>Arma tu pc</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,9 +19,9 @@ and open the template in the editor.
         <!--formulario donde esta el textbox principal y boton principal de la aplicacion-->
         <!-- Me gustaría saber por qué redirige a Descripcion.jsp -->
     <div class="form">
-        <form action="Formularios/Descripcion.jsp" method="post" >
+        <form action="Formularios/consultar.jsp" method="post" >
             <h1>Armá  <small>tu pc.</small> </h1>
-            <input class="tex" type="text" placeholder="Ingresa tu presupuesto"/><br>
+            <input class="tex" type="text" placeholder="Ingresa tu presupuesto" name="saldo"/><br>
             <input class="bot" type="submit" value="Consultar"/>   
         </form>
     </div> 
