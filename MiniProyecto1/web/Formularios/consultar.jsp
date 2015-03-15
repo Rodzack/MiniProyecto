@@ -4,6 +4,10 @@
     Author     : cristian
 --%>
 
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="com.mysql.jdbc.Statement"%>
+<%@page import="com.mysql.jdbc.Connection"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,6 +17,27 @@
     </head>
     <body>
     <%    
+        //conexion
+        Connection conex = null;
+            Statement estado = null;
+            ResultSet result;
+            String descripcion;
+            String producto;
+            String descripcionproducto;
+            ResultSet rs;
+
+            try {
+                Class.forName("com.mysql.jdbc.Driver");
+                conex = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/miniproyecto", "root", "");
+                estado= (Statement)conex.createStatement();
+                out.println("Conexion establecida");
+            } catch (Exception e) {
+                out.println("Error en la conexion" + e);
+            }
+        %>
+    <%   
+        
+        
         //valor para cada parte del computador dependiendo el valor ingresado
         double porcentaje=20;
         double mouse = Double.parseDouble(request.getParameter("saldo"))*porcentaje/100;
@@ -29,8 +54,39 @@
         
         
         out.println(mouse);
+        
+        
         %> 
         
+        <%
+        String query;
+        query ="select * from producto";
+        rs= estado.executeQuery(query);
+        
+        while(rs.next()){
+        out.println("<table style="+"border=solid 1px black;"+" >");
+        out.println("<tr>");
+        out.println("<th>idProducto</th>");
+        out.println("<th>Nombre</th>");
+        out.println("<th>idTipoProducto</th>");
+        out.println("</tr>");
+
+        out.println("<tr>");
+        out.println("<td>"+rs.getInt("idProducto")+"</td>");
+        out.println("<td>"+rs.getString("nombre")+"</td>");
+        //si alguien sabe como llamar no el numero del foreign key sino el valor de la foreign key hacerlo.
+        // yo no fui capaz, investigue y no sale nada
+        // si no entienden es esto idTipoProducto = 1 pero en la tabla tipo proudcto es procesador
+        // eso es a lo que me refierto
+        out.println("<td>"+rs.getString("idTipoProducto")+"</td>");
+        out.println("</tr>");
+        
+     
+        out.println("</table>");
+        out.println("<br><br>");
+        }
+        conex.close();
+        %>
         
     </body>
 </html>
