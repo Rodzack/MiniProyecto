@@ -60,7 +60,7 @@
         
         <%
         String query;
-        query ="select * from producto";
+        query ="select pd.idProducto,pd.nombre,tp.tipoProducto from producto as pd,tipoproducto as tp where pd.idTipoProducto = tp.idTipoProducto order by idProducto";
         rs= estado.executeQuery(query);
         
         while(rs.next()){
@@ -72,13 +72,15 @@
         out.println("</tr>");
 
         out.println("<tr>");
-        out.println("<td>"+rs.getInt("idProducto")+"</td>");
+        //out.println("<td>"+rs.getInt("idProducto")+"</td>");
+         out.println("<td>"+rs.getString("idProducto")+"</td>");
         out.println("<td>"+rs.getString("nombre")+"</td>");
+        out.println("<td>"+rs.getString("tipoProducto")+"</td>");
         //si alguien sabe como llamar no el numero del foreign key sino el valor de la foreign key hacerlo.
         // yo no fui capaz, investigue y no sale nada
         // si no entienden es esto idTipoProducto = 1 pero en la tabla tipo proudcto es procesador
         // eso es a lo que me refierto
-        out.println("<td>"+rs.getString("idTipoProducto")+"</td>");
+        //out.println("<td>"+rs.getString("idTipoProducto")+"</td>");
         out.println("</tr>");
         
      
