@@ -56,20 +56,6 @@ Tarjeta De Video Evga Geforce Gt 620 2gb Ddr3 220.000
 Tarjeta Video Nvidia Geforce Evga Gt 720 Ddr3 2gb Pci Expres 199.900
 Tarjeta De Video Gforce 520 De 2 Gigas Evga 134.900
 
-Proceadores
-
-Intel Core I5 4440 3.3ghz Socket Lga 1150 4ta Gen 504.900
-Procesador Amd Fx 6300 Vishera 3.5 Ghz 6 Núcleos 95w Am3+ 304.900
---Procesador Intel Pentium G3220 3.0ghz Socket Lga1150 4ta Gen 179.900
-Procesador Amd Fx 6350 3.9/4.2 Ghz X6 Am3+ 6 Nucleos 125w 364.900
-
---Procesador Amd Fx-4300 Black Edition Vishera 3.8 Ghz 95w 269.900
-
-Procesador Intel Celeron G1840 2.8ghz Socket Lga1150 4ta Gen 159.900
---Procesador Intel Core I5 4690k Devils Cayon 664.900
-Procesador Intel Pentium G3258 2 Nucleos 3.2 GH 230.000
-Procesador Intel Core I5 4690k 3.5ghz Socket Lga1150 4ta Gen 664.900
-
 Board
 Board Asrock G41m Vs3 Ddr3 775 Procesadores Intel Lga 189.000
 Board Asrock Para Amd - Sirve Con Ddr2 Y Ddr3 2 Puertos Pci 139.990
@@ -112,7 +98,7 @@ Mouse Gamer A4tech Laser 750bk 45.000
 Mouse Genius Gx Gaming Gila 12 Botones 200 - 8200dpi  luz de fondo RGB cable 1.8m Usb 177.500 
 
 Teclados
-Teclado Inalambrico Logitech 10 metros de alcance,Plug and Play,Touchpad Integrado de 9 cm  99.900
+Teclado Inalambrico Logitech 10 metros de alcance,Plug and Play, Touchpad Integrado de 9 cm  99.900
 Teclado Genius Manticore Kb-g255 teclado con retroiluminación LED azul 71.000
 Teclado Razer Deathstalker Ultimate Pantalla Tactil 4.05 usb 649.900
 Teclado Flexible Usb Unitec usb 17.990
@@ -121,10 +107,41 @@ Teclado Microsoft Wedge Mobile Bluetooth Spañol U6r00004 89.900
 Teclado Genius Kb-g235 usb 30.900
 Teclado Logitech G105 Gaming · Retroiluminado · Programable,usb, desactivacion de teclas 87.900
 
+Proceadores
+
+Intel Core I5 4440 3.3ghz Socket Lga 1150 4ta Gen 504.900
+Procesador Amd Fx 6300 Vishera 3.5 Ghz 6 Núcleos 95w Am3+ 304.900
+Procesador Intel Pentium G3220 3.0ghz Socket Lga1150 4ta Gen 179.900
+Procesador Amd Fx 6350 3.9/4.2 Ghz X6 Am3+ 6 Nucleos 125w 364.900
+Procesador Amd Fx-4300 Black Edition Vishera 3.8 Ghz 95w 269.900
+Procesador Intel Celeron G1840 2.8ghz Socket Lga1150 4ta Gen 159.900
+Procesador Intel Core I5 4690k Devils Cayon 664.900
+Procesador Intel Pentium G3258 2 Nucleos 3.2 GH 230.000
+Procesador Intel Core I5 4690k 3.5ghz Socket Lga1150 4ta Gen 664.900
+
+Board
+Board Asrock G41m Vs3 Ddr3 775 Procesadores Intel Lga 189.000
+Board Asrock Para Amd - Sirve Con Ddr2 Y Ddr3 2 Puertos Pci 139.990
+Board Asus H81m-c 4ta Gen Uefi Bios Mode Procesadores Intel 174.900
+Board Gigabyte Z97x-ud7 Th Lga 1150 Soporte Multi-gpu 654.900
+Board Gigabyte Ga-970a-ds3p Am3+ Atx Crossfire Usb 3.0 Sata3 254.900
+Board Asrock H81m-vg4 Skt 1150 Intel/ +opcional Proc. 4a Gen 124.900
+Board Asrock H81m Vg4 Socket 1150 Intel 4ta Generacion 123.900
 
 Coolers
 Disipador Cooler Master Tpc 812 Con Camara De Vapor Vertical 199.900
 Disipador De Refrigeracion Liquida Cooler Master Seidon120m 209.900
 Disipador De Refrigeracion Liquida Cooler Master Glacer 240l 399.900
 Disipador Cooler Master Seidon120v Sistema Montaje Universal
-            
+     
+
+CPU: 80
+Targeta madre: 90 
+Memoria RAM 30 
+Targeta de video:150 
+Disco duro :45 
+Fuente de poder: 60 
+Gabinete: 100 -80-30
+Quemador DVD :20 
+Monitor: 170 
+       

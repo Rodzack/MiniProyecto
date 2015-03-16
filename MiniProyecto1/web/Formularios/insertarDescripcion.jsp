@@ -43,7 +43,15 @@
 
             //Insertar 
             try {
-                descripcion = "insert into descripcion (capacidad,velocidad,tipoDeConexion,tecnologia,voltaje,tamanio,descripcionAdicional,compatibilidad) values ('" + request.getParameter("capacidad") + "','" + request.getParameter("velocidad") + "','" + request.getParameter("tipoConexion") + "','" + request.getParameter("tecnologia") + "','" + request.getParameter("voltaje") + "','" + request.getParameter("tamanio") + "','" + request.getParameter("descripcionAdicional") + "','" + Integer.parseInt(request.getParameter("compatibilidad")) + "')";
+                descripcion = "insert into descripcion (capacidad,velocidad,tipoDeConexion,tecnologia,voltaje,tamanio,descripcionAdicional,compatibilidad) values "
+                        + "('" + request.getParameter("capacidad") + "','" 
+                        + request.getParameter("velocidad") + "','" 
+                        + request.getParameter("tipoConexion") + "','" 
+                        + request.getParameter("tecnologia") + "','" 
+                        + request.getParameter("voltaje") + "','" 
+                        + request.getParameter("tamanio") + "','" 
+                        + request.getParameter("descripcionAdicional") + "','" 
+                        + Integer.parseInt(request.getParameter("compatibilidad")) + "')";
                 estado.executeUpdate(descripcion);
                 out.println("insertado descripcion");
 
@@ -55,7 +63,7 @@
                 estado.executeUpdate(descripcionproducto);
                 out.println("insertado descripcion producto");
             } catch (Exception e) {
-                out.println("Hubo un  error al insertar");
+                out.println("Hubo un  error al insertar" + e);
             }
 
         %>
