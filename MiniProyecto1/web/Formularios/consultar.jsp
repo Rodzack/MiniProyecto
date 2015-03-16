@@ -88,6 +88,13 @@
         out.println("<br><br>");
         }
         conex.close();
+
+//algoritmo anidado
+
+        /*String consulta="select tipoProducto.tipoProducto, producto.nombre, marca.nombreMarca,
+descripcion.capacidad, descripcion.velocidad, descripcion.tipoDeConexion, descripcion.tecnologia,
+descripcion.voltaje, descripcion.tamanio, descripcion.descripcionAdicional, 
+(select nombreMarca from marca where idMarca = compatibilidad) from tipoProducto, producto, marca, descripcion";*/
         %>
         
     </body>
