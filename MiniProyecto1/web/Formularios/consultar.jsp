@@ -85,15 +85,10 @@
         out.println("</tr>");
 
         out.println("<tr>");
-        //out.println("<td>"+rs.getInt("idProducto")+"</td>");
+        
          out.println("<td>"+rs.getString("idProducto")+"</td>");
         out.println("<td>"+rs.getString("nombre")+"</td>");
         out.println("<td>"+rs.getString("tipoProducto")+"</td>");
-        //si alguien sabe como llamar no el numero del foreign key sino el valor de la foreign key hacerlo.
-        // yo no fui capaz, investigue y no sale nada
-        // si no entienden es esto idTipoProducto = 1 pero en la tabla tipo proudcto es procesador
-        // eso es a lo que me refierto
-        //out.println("<td>"+rs.getString("idTipoProducto")+"</td>");
         out.println("</tr>");
         
      
@@ -102,12 +97,6 @@
         }
         conex.close();
 
-//algoritmo anidado
-
-        /*String consulta="select tipoProducto.tipoProducto, producto.nombre, marca.nombreMarca,
-descripcion.capacidad, descripcion.velocidad, descripcion.tipoDeConexion, descripcion.tecnologia,
-descripcion.voltaje, descripcion.tamanio, descripcion.descripcionAdicional, 
-(select nombreMarca from marca where idMarca = compatibilidad) from tipoProducto, producto, marca, descripcion";*/
         %>
         
     </body>
