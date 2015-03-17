@@ -38,31 +38,44 @@
     <%   
         
         
-        /*valor para cada parte del computador dependiendo el valor ingresado
+        //valor para cada parte del computador dependiendo el valor ingresado
         double porcentaje=20;
-        double mouse = Double.parseDouble(request.getParameter("saldo"))*porcentaje/100;
-        double teclado = Double.parseDouble(request.getParameter("saldo"))*porcentaje/100 ; 
-        double pantalla = Double.parseDouble(request.getParameter("saldo"))*porcentaje/100;
-        double board = Double.parseDouble(request.getParameter("saldo"))*porcentaje/100;
-        double procesador = Double.parseDouble(request.getParameter("saldo"))*porcentaje/100;
-        double grafica = Double.parseDouble(request.getParameter("saldo"))*porcentaje/100;
-        double fuentePoder = Double.parseDouble(request.getParameter("saldo"))*porcentaje/100;
-        double ram = Double.parseDouble(request.getParameter("saldo"))*porcentaje/100;
-        double cooler = Double.parseDouble(request.getParameter("saldo"))*porcentaje/100;
-        double dicoDuro = Double.parseDouble(request.getParameter("saldo"))*porcentaje/100; 
-        double gabinete = Double.parseDouble(request.getParameter("saldo"))*porcentaje/100;
+        double mouse = Double.parseDouble(request.getParameter("saldo"))*2/100;
+        double teclado = Double.parseDouble(request.getParameter("saldo"))*2/100 ; 
+        double pantalla = Double.parseDouble(request.getParameter("saldo"))*10/100;
+        double board = Double.parseDouble(request.getParameter("saldo"))*12/100;
+        double procesador = Double.parseDouble(request.getParameter("saldo"))*19/100;
+        double grafica = Double.parseDouble(request.getParameter("saldo"))*19/100;
+        double fuentePoder = Double.parseDouble(request.getParameter("saldo"))*8/100;
+        double ram = Double.parseDouble(request.getParameter("saldo"))*9/100;
+        double cooler = Double.parseDouble(request.getParameter("saldo"))*3/100;
+        double dicoDuro = Double.parseDouble(request.getParameter("saldo"))*6/100; 
+        double gabinete = Double.parseDouble(request.getParameter("saldo"))*13/100;
         
         
-        out.println(mouse);
+        out.println("mouse"+mouse+"<br>");
+        out.println("teclado"+teclado+"<br>");
+        out.println("pantalla"+pantalla+"<br>");
+        out.println("board"+board+"<br>");
+        out.println("procesador"+procesador+"<br>");
+        out.println("grafica"+grafica+"<br>");
+        out.println("fuente de poder"+fuentePoder+"<br>");
+        out.println("ram"+ram+"<br>");
+        out.println("cooler"+cooler+"<br>");
+        out.println("disco duro"+dicoDuro+"<br>");
+        out.println("gabinete"+gabinete+"<br>");
         
-        */
         %> 
         
         <%
         String query;
         query ="select pd.idProducto,pd.nombre,tp.tipoProducto from producto as pd,tipoproducto as tp where pd.idTipoProducto = tp.idTipoProducto order by idProducto";
         rs= estado.executeQuery(query);
-        
+        //Select 
+        //descripcionProducto.idProducto, descripcionProducto.precio, 
+        //producto.nombre,
+        //tipoProducto.tipoProducto
+        //from descripcionProducto inner join  producto on descripcionProducto.idProducto = producto.idProducto inner join tipoProducto on producto.idTipoProducto = tipoProducto.idTipoProducto where tipoProducto = 'discoDuro'
         while(rs.next()){
         out.println("<table>");
         out.println("<tr>");
