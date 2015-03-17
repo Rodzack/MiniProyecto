@@ -38,7 +38,7 @@
     <%   
         
         
-        //valor para cada parte del computador dependiendo el valor ingresado
+        /*valor para cada parte del computador dependiendo el valor ingresado
         double porcentaje=20;
         double mouse = Double.parseDouble(request.getParameter("saldo"))*porcentaje/100;
         double teclado = Double.parseDouble(request.getParameter("saldo"))*porcentaje/100 ; 
@@ -55,7 +55,7 @@
         
         out.println(mouse);
         
-        
+        */
         %> 
         
         <%
@@ -64,7 +64,7 @@
         rs= estado.executeQuery(query);
         
         while(rs.next()){
-        out.println("<table style="+"border=solid 1px black;"+" >");
+        out.println("<table>");
         out.println("<tr>");
         out.println("<th>idProducto</th>");
         out.println("<th>Nombre</th>");
