@@ -30,7 +30,7 @@
                 Class.forName("com.mysql.jdbc.Driver");
                 conex = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/miniproyecto", "root", "");
                 estado= (Statement)conex.createStatement();
-                out.println("Conexion establecida");
+                out.println("Conexion establecida"+"<br>");
             } catch (Exception e) {
                 out.println("Error en la conexion" + e);
             }
@@ -39,7 +39,7 @@
         
         
         //valor para cada parte del computador dependiendo el valor ingresado
-        double porcentaje=20;
+        
         double mouse = Double.parseDouble(request.getParameter("saldo"))*2/100;
         double teclado = Double.parseDouble(request.getParameter("saldo"))*2/100 ; 
         double pantalla = Double.parseDouble(request.getParameter("saldo"))*10/100;
@@ -53,17 +53,17 @@
         double gabinete = Double.parseDouble(request.getParameter("saldo"))*13/100;
         
         
-        out.println("mouse"+mouse+"<br>");
-        out.println("teclado"+teclado+"<br>");
-        out.println("pantalla"+pantalla+"<br>");
-        out.println("board"+board+"<br>");
-        out.println("procesador"+procesador+"<br>");
-        out.println("grafica"+grafica+"<br>");
-        out.println("fuente de poder"+fuentePoder+"<br>");
-        out.println("ram"+ram+"<br>");
-        out.println("cooler"+cooler+"<br>");
-        out.println("disco duro"+dicoDuro+"<br>");
-        out.println("gabinete"+gabinete+"<br>");
+        out.println("Mouse: "+mouse+"<br>");
+        out.println("Teclado: "+teclado+"<br>");
+        out.println("Pantalla: "+pantalla+"<br>");
+        out.println("Board: "+board+"<br>");
+        out.println("Procesador: "+procesador+"<br>");
+        out.println("Grafica: "+grafica+"<br>");
+        out.println("Fuente de poder: "+fuentePoder+"<br>");
+        out.println("Ram: "+ram+"<br>");
+        out.println("Cooler: "+cooler+"<br>");
+        out.println("Disco duro: "+dicoDuro+"<br>");
+        out.println("Gabinete: "+gabinete+"<br>");
         
         %> 
         
@@ -76,27 +76,25 @@
         //producto.nombre,
         //tipoProducto.tipoProducto
         //from descripcionProducto inner join  producto on descripcionProducto.idProducto = producto.idProducto inner join tipoProducto on producto.idTipoProducto = tipoProducto.idTipoProducto where tipoProducto = 'discoDuro'
-        while(rs.next()){
-        out.println("<table>");
+ 
+        out.println("<table border=1>");
         out.println("<tr>");
-        out.println("<th>idProducto</th>");
-        out.println("<th>Nombre</th>");
-        out.println("<th>idTipoProducto</th>");
+        out.println("<th><label>idProducto</label></th>");
+        out.println("<th><label>Nombre</label></th>");  
+        out.println("<th><label>idTipoProducto</label></th>"); 
         out.println("</tr>");
-
-        out.println("<tr>");
-        
-         out.println("<td>"+rs.getString("idProducto")+"</td>");
+        while(rs.next()){
+        out.println("<tr>");      
+        out.println("<td>"+rs.getString("idProducto")+"</td>");
         out.println("<td>"+rs.getString("nombre")+"</td>");
         out.println("<td>"+rs.getString("tipoProducto")+"</td>");
         out.println("</tr>");
-        
-     
-        out.println("</table>");
-        out.println("<br><br>");
         }
+        out.println("</table>");
+        out.println("<br><br>");   
+        
         conex.close();
-
+      
         %>
         
     </body>
