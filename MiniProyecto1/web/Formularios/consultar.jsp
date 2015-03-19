@@ -18,16 +18,17 @@
     </head>
     <body>
         <%
-            ArrayList tecladoarray;
-            tecladoarray = new ArrayList<String>();
+            // ESTE ARRAY FUE PROBANDO
+            //ArrayList tecladoArray;
+            //tecladoArray = new ArrayList<String>();
             //conexion
             Connection conex = null;
             Statement estado = null;
-            ResultSet result;
-            String descripcion;
-            String producto;
-            String descripcionproducto;
             ResultSet rs;
+            
+            
+            String teclados[][];
+            
 
             try {
                 Class.forName("com.mysql.jdbc.Driver");
@@ -75,7 +76,11 @@
                     + " join tipoproducto tp on p.idTipoproducto = tp.IdTipoProducto where dp.precio <='"+teclado+"' and tp.tipoProducto = 'teclado'";
             rs = estado.executeQuery(query);
             
-            
+            /*while(rs.next()){
+                tecladoArray.add(rs.getString("p.nombre"));
+                tecladoArray.add(rs.getString("tp.tipoProducto"));
+                tecladoArray.add(rs.getString("dp.precio"));
+            }*/
 
             out.println("<table border=1>");
             out.println("<tr>");
@@ -84,14 +89,59 @@
             out.println("<th><label>idTipoProducto</label></th>");
             out.println("<th><label>Precio</label></th>");
             out.println("</tr>");
+            
+            /*for (int i = 0; i < tecladoArray.size(); i++) {
+                    out.println("<tr>");
+                    out.println("<td>" + tecladoArray.get(i) + "</td>");
+                    out.println("</tr>");
+                }
+            
+            */
+            
+            
+            //contanto registros para crear la matriz
+            int cont=0;
             while (rs.next()) {
+                    cont++;
+                }
+            
+            //creacion de la matriz
+            teclados = new String [3][cont];
+            
+            
+            query = "select dp.idProducto,p.nombre, m.nombreMarca,d.capacidad,d.compatibilidad,d.descripcionAdicional,d.tamanio,d.tecnologia,dp.precio,tp.tipoProducto"
+                    + " from descripcionproducto dp"
+                    + " join descripcion d on dp.idDescripcion=d.idDescripcion"
+                    + " join marca m on dp.idMarca=m.idMarca"
+                    + " join producto p on dp.idProducto=p.idProducto"
+                    + " join tipoproducto tp on p.idTipoproducto = tp.IdTipoProducto where dp.precio <='"+teclado+"' and tp.tipoProducto = 'teclado'";
+            rs = estado.executeQuery(query);
+            
+            
+            //llenando matriz con registro crando variable externa "j"
+            int j=0;
+            while (rs.next()) {
+                    
+                    teclados[0][j] = rs.getString("p.nombre");
+                    teclados[1][j] = rs.getString("tp.tipoProducto");
+                    teclados[2][j] = rs.getString("dp.precio");
+                    out.println(teclados[0][j] + " | " + teclados[1][j] + " | " + teclados[2][j] + "<br>");
+
+                    j++;
+                }
+            
+            
+            
+            /*while (rs.next()) {
                 out.println("<tr>");
                 out.println("<td>" + rs.getString("dp.idProducto") + "</td>");
                 out.println("<td>" + rs.getString("p.nombre") + "</td>");
                 out.println("<td>" + rs.getString("tp.tipoProducto") + "</td>");
                 out.println("<td>" + rs.getString("dp.precio") + "</td>");
                 out.println("</tr>");
-            }
+            }*/
+            
+            
             out.println("</table>");
             out.println("<br><br>");
 
