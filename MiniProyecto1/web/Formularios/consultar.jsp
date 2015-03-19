@@ -4,6 +4,7 @@
     Author     : cristian
 --%>
 
+<%@page import="java.util.ArrayList"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="com.mysql.jdbc.Statement"%>
@@ -17,6 +18,8 @@
     </head>
     <body>
         <%
+            ArrayList tecladoarray;
+            tecladoarray = new ArrayList<String>();
             //conexion
             Connection conex = null;
             Statement estado = null;
@@ -71,6 +74,8 @@
                     + " join producto p on dp.idProducto=p.idProducto"
                     + " join tipoproducto tp on p.idTipoproducto = tp.IdTipoProducto where dp.precio <='"+teclado+"' and tp.tipoProducto = 'teclado'";
             rs = estado.executeQuery(query);
+            
+            
 
             out.println("<table border=1>");
             out.println("<tr>");
