@@ -57,7 +57,7 @@ Tarjeta Video Nvidia Geforce Evga Gt 720 Ddr3 2gb Pci Expres 199.900
 Tarjeta De Video Gforce 520 De 2 Gigas Evga 134.900
 
 Board
-Board Asrock G41m Vs3 Ddr3 775 Procesadores Intel Lga 189.000
+Board Asrock G41m Vs3 Ddr3 Socket 775 Procesadores Intel Lga 189.000
 Board Asrock Para Amd - Sirve Con Ddr2 Y Ddr3 2 Puertos Pci 139.990
 Board Asus H81m-c 4ta Gen Uefi Bios Mode Procesadores Intel 174.900
 Board Gigabyte Z97x-ud7 Th Lga 1150 Soporte Multi-gpu 654.900
