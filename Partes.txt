@@ -5,7 +5,7 @@ tipoDeConexion
 tecnologia
 Voltaje
 Tamaño
-descripcionAdicional
+descripcionAdicional ewdfs
 compatibilidad
 
 
